@@ -1,0 +1,10 @@
+ISO3,Name,Year,Conflict Stock Displacement,Conflict New Displacements,Disaster New Displacements
+#country+code,#country+name,#date+year,#affected+idps+ind+stock+conflict,#affected+idps+ind+newdisp+conflict,#affected+idps+ind+newdisp+disaster
+SSD,South Sudan,2011,350000,350000,
+SSD,South Sudan,2012,350000,190000,340000
+SSD,South Sudan,2013,383000,383000,116000
+SSD,South Sudan,2014,1498000,1304000,112000
+SSD,South Sudan,2015,1697000,199000,15000
+SSD,South Sudan,2016,1854000,281000,
+SSD,South Sudan,2017,1899000,857000,75000
+SSD,South Sudan,2018,1869000,321000,6600
