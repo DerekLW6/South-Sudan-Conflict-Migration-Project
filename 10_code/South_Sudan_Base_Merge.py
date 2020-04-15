@@ -2,7 +2,7 @@
 """
 Created on Mon Apr 13 15:49:03 2020
 
-@author: josep
+@author: Joseph Littell
 """
 # Required Libraries
 import pandas as pd
