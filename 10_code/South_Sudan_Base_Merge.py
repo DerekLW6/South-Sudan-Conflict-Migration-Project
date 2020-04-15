@@ -89,7 +89,7 @@ conflict_sliced = conflict_sliced.groupby(['admin1', 'admin2', 'year']).sum()
 conflict_sliced.reset_index(inplace=True)
 
 # Rename the columns to fit Population's style for easier merge
-conflict_sliced.columns = ['State', 'County', 'Year', 'Fatalities']
+conflict_sliced.columns = ['State','County', 'Year', 'Fatalities']
 
 # Recheck the Data to ensure the transformations are complete
 conflict_sliced.head()
@@ -101,7 +101,7 @@ conflict_sliced = conflict_sliced.replace("Raja","Raga")
 #                  #
 #------------------#
 
-pop_fatalities = pd.merge(population_melt, conflict_sliced, on = ['County', 'State', 'Year'], how = "outer")
+pop_fatalities = pd.merge(population_melt, conflict_sliced, on = ['County', 'State', 'Year'], how = "left")
 
 # Since there are numerous locations that did not see violence every year, we are filling the nan values with zero
 pop_fatalities['Fatalities'] = pop_fatalities['Fatalities'].fillna(0)
